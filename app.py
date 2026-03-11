@@ -24,18 +24,18 @@ def result():
         food = "Pizza"
     elif "tired" in mood:
         food = "Coffee"
-    elif "hungry" in mood:
-        food = "Burger"
     elif "sad" in mood:
         food = "Ice Cream"
+    elif "hungry" in mood:
+        food = "Burger"
     else:
         food = "Sandwich"
 
     return f"""
-    <h2>Food Suggestion</h2>
+    <h2>Food Recommendation</h2>
 
-    <p><b>Your mood:</b> {mood}</p>
-    <p><b>Recommended food:</b> {food}</p>
+    <p><b>Your Mood:</b> {mood}</p>
+    <p><b>Suggested Food:</b> {food}</p>
 
     <br>
     <a href="/">Try Again</a>
@@ -43,4 +43,4 @@ def result():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    app.run(port=5001)
